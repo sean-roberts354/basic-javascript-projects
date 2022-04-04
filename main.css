@@ -1,0 +1,178 @@
+/* ----------------- */
+/* Custom Properties */
+/* ----------------- */
+/* ----------- */
+/*   Reset     */
+/* ----------- */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* -------------- */
+/* Utility Styles */
+/* -------------- */
+.container {
+  padding-inline: 2rem;
+  margin-inline: auto;
+  max-width: 80rem;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.bg-primary {
+  background-color: #082032;
+}
+
+.bg-secondary {
+  background-color: #FF4C29;
+}
+
+.bg-accent {
+  background-color: #334756;
+}
+
+.text-primary {
+  color: #082032;
+}
+
+.text-secondary {
+  color: #FF4C29;
+}
+
+.text-accent {
+  color: #334756;
+}
+
+.text-white {
+  color: whitesmoke;
+}
+
+.ff-sans-normal {
+  font-family: "Montserrat", sans-serif;
+}
+
+.fs-900 {
+  font-size: 9.375em;
+}
+
+.fs-800 {
+  font-size: 6.25em;
+}
+
+.fs-700 {
+  font-size: 3.5em;
+}
+
+.fs-600 {
+  font-size: 2em;
+}
+
+.fs-500 {
+  font-size: 1.75em;
+}
+
+.fs-400 {
+  font-size: 1.125em;
+}
+
+.fs-300 {
+  font-size: 1em;
+}
+
+.fs-200 {
+  font-size: 0.875em;
+}
+
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600 {
+  line-height: 1.1;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,167 @@
+/* ----------------- */
+/* Custom Properties */
+/* ----------------- */
+
+
+
+      // Colors
+      $clr-primary: #082032;
+      $clr-secondary: #FF4C29;
+      $clr-accent: #334756;
+
+      // Font sizes (1em:16px)
+      $fs-900: 9.375em;
+      $fs-800: 6.25em;
+      $fs-700: 3.5em;
+      $fs-600: 2em;
+      $fs-500: 1.75em;
+      $fs-400: 1.125em;
+      $fs-300: 1em;
+      $fs-200: 0.875em;      
+
+      // Font-familes
+      $ff-sans-normal: 'Montserrat', sans-serif;
+
+
+
+
+/* ----------- */
+/*   Reset     */
+/* ----------- */
+
+// Reset box sizing for all elements
+*,
+*::before,
+*::after {
+      box-sizing: border-box;
+}
+
+// Remove default margin
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+      margin: 0;
+}
+
+// Set smooth scrolling
+html:focus-within {
+      scroll-behavior: smooth;
+}
+
+// Set core body styles
+body {
+      min-height: 100vh;
+      text-rendering: optimizeSpeed;
+      line-height: 1.5;
+}
+
+// Reset text-decoration for links without a class
+a:not([class]) {
+      text-decoration-skip-ink: auto;
+}
+
+// Makes images easier to work with
+img {
+      max-width: 100%;
+      display: block;
+}
+
+// These elements don't inherit font by default
+input,
+button,
+textarea,
+select {
+      font: inherit;
+}
+
+// Disable animations for users that have disabled them in their browser/OS settings
+@media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+            scroll-behavior: auto !important;
+      }
+}
+
+
+/* -------------- */
+/* Utility Styles */
+/* -------------- */
+
+// General
+
+.container {
+      padding-inline: 2rem;
+      margin-inline: auto;
+      max-width: 80rem;
+}
+
+.flex {
+      display: flex;
+      gap: var(--gap, 1rem);
+}
+
+.grid {
+      display: grid;
+      gap: var(--gap, 1rem);
+}
+
+.sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+}
+
+
+// Colors
+
+.bg-primary { background-color: $clr-primary;}
+.bg-secondary { background-color: $clr-secondary;}
+.bg-accent { background-color: $clr-accent;}
+
+.text-primary { color: $clr-primary;}
+.text-secondary { color: $clr-secondary;}
+.text-accent { color: $clr-accent;}
+.text-white { color: whitesmoke; }
+
+
+// Typography
+
+.ff-sans-normal { font-family: $ff-sans-normal;}
+
+.fs-900 { font-size: $fs-900;}
+.fs-800 { font-size: $fs-800;}
+.fs-700 { font-size: $fs-700;}
+.fs-600 { font-size: $fs-600;}
+.fs-500 { font-size: $fs-500;}
+.fs-400 { font-size: $fs-400;}
+.fs-300 { font-size: $fs-300;}
+.fs-200 { font-size: $fs-200;}
+
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600 {
+      line-height: 1.1;
+}
+
+.uppercase { text-transform: uppercase;}
