@@ -110,14 +110,21 @@ select {
       max-width: 80rem;
 }
 
-.flex {
+.flex-row {
       display: flex;
-      gap: var(--gap, 1rem);
+      flex-direction: row;
+      gap: 1rem;
+}
+
+.flex-column {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
 }
 
 .grid {
       display: grid;
-      gap: var(--gap, 1rem);
+      gap: 1rem;
 }
 
 .sr-only {
@@ -165,3 +172,30 @@ select {
 }
 
 .uppercase { text-transform: uppercase;}
+
+.letter-spacing-1 { letter-spacing: 4.75px; }
+.letter-spacing-2 { letter-spacing: 2.7px; }
+.letter-spacing-3 { letter-spacing: 2px; }
+
+
+
+
+
+
+
+/* -------------------- */
+/* Page-Specific Styles */
+/* -------------------- */
+
+/* design-system.html */
+
+section:not(:last-child) {
+      margin-bottom: 2rem;
+}
+
+.color-item {
+      p > span {
+            color: $clr-accent;
+            margin-right: 0.6rem;
+      }
+}
