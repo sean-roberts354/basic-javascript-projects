@@ -266,6 +266,11 @@ select {
   color: #082032;
 }
 
+.nav-container .primary-nav ul li :hover,
+.nav-container .primary-nav ul li :focus {
+  color: #082032;
+}
+
 .nav-container .tab-nav {
   background-color: #334756;
   padding-block: 0;

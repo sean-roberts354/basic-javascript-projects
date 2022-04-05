@@ -215,7 +215,8 @@ select {
                   gap: 2rem;
                   align-items: center;
                   justify-content: center;
-                  padding-inline: 0;            
+                  padding-inline: 0;   
+         
 
                   a {
                         text-decoration: none;
@@ -226,6 +227,16 @@ select {
 
                   .active {
                         color: $clr-primary;
+                  }
+
+                  li {
+
+                        :hover,
+                        :focus {
+                              color: $clr-primary;
+                        }
+
+
                   }
             }
       }
