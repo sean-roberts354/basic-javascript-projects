@@ -280,6 +280,25 @@ select {
 }
 
 
+// Project Cards for projects/view-all.html
+.project-card {
+      align-items: center;
+      justify-content: center;
+      padding: 3rem;
+      aspect-ratio: 1;
+      border-radius: 1rem;
+      background-color: $clr-accent-1;
+
+      i {
+            font-size: $fs-700;
+      }
+
+      :hover {
+            transition: all 500ms ease-in-out;
+            background-color: $clr-secondary;
+      }
+}
+
 
 
 
