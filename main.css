@@ -38,6 +38,16 @@ body {
   line-height: 1.5;
 }
 
+/* // Remove default font-weights (Commented out for now because I actually like the default weights and don't want to keep re-adding them.
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+      font-weight: 400;
+} */
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
@@ -178,6 +188,7 @@ select {
 
 .fs-200 {
   font-size: 0.875em;
+  font-weight: 300;
 }
 
 .fs-900,
@@ -209,6 +220,11 @@ select {
 /* design-system.html */
 section:not(:last-child) {
   margin-bottom: 2rem;
+}
+
+section > h2 {
+  margin-bottom: .5rem;
+  border-bottom: #334756 solid 2px;
 }
 
 .color-item p > span {

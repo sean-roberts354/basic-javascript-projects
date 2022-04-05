@@ -66,6 +66,17 @@ body {
       line-height: 1.5;
 }
 
+/* // Remove default font-weights (Commented out for now because I actually like the default weights and don't want to keep re-adding them.
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+      font-weight: 400;
+} */
+
 // Reset text-decoration for links without a class
 a:not([class]) {
       text-decoration-skip-ink: auto;
@@ -162,7 +173,7 @@ select {
 .fs-500 { font-size: $fs-500;}
 .fs-400 { font-size: $fs-400;}
 .fs-300 { font-size: $fs-300;}
-.fs-200 { font-size: $fs-200;}
+.fs-200 { font-size: $fs-200; font-weight: 300;}
 
 .fs-900,
 .fs-800,
@@ -192,6 +203,13 @@ select {
 section:not(:last-child) {
       margin-bottom: 2rem;
 }
+
+section > h2 {
+      margin-bottom: .5rem;
+      border-bottom: $clr-accent solid 2px;
+}
+      
+
 
 .color-item {
       p > span {
