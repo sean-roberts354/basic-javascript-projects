@@ -202,7 +202,7 @@ select {
 // Top navigation bars
 .nav-container {
       margin-inline: -2rem;
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
       gap: 0;
       display: flex;
       flex-direction: column;
@@ -289,6 +289,7 @@ select {
       transition: all 400ms ease-in-out;
       text-decoration: none;
       color: inherit;
+      text-align: center;
 
       i {
             font-size: $fs-700;
@@ -333,4 +334,12 @@ section > h2 {
             padding-inline: 2rem;
             padding-bottom: 1rem;
       }
+}
+
+
+/* Javascript Projects Pages */
+
+/* view-all.html */
+main > h1 {
+      margin-bottom: 1.5rem;
 }
