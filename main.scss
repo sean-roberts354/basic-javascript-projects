@@ -288,13 +288,16 @@ select {
       aspect-ratio: 1;
       border-radius: 1rem;
       background-color: $clr-accent-1;
+      transition: all 400ms ease-in-out;
+      text-decoration: none;
+      color: inherit;
 
       i {
             font-size: $fs-700;
       }
 
-      :hover {
-            transition: all 500ms ease-in-out;
+      &:hover {
+            transition: all 400ms ease-in-out;
             background-color: $clr-secondary;
       }
 }

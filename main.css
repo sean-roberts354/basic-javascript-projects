@@ -329,15 +329,19 @@ select {
   aspect-ratio: 1;
   border-radius: 1rem;
   background-color: #334756;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+  text-decoration: none;
+  color: inherit;
 }
 
 .project-card i {
   font-size: 3.5em;
 }
 
-.project-card :hover {
-  -webkit-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
+.project-card:hover {
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
   background-color: #FF4C29;
 }
 
