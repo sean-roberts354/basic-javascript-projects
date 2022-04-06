@@ -268,14 +268,17 @@ select {
   color: inherit;
   font-size: 1.75em;
   font-weight: 500;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+
+.nav-container .primary-nav ul a:hover, .nav-container .primary-nav ul a:focus {
+  color: #082032;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
 }
 
 .nav-container .primary-nav ul .active {
-  color: #082032;
-}
-
-.nav-container .primary-nav ul li :hover,
-.nav-container .primary-nav ul li :focus {
   color: #082032;
 }
 
@@ -303,19 +306,24 @@ select {
   padding-inline: 1.5rem;
 }
 
-.nav-container .tab-nav li :focus, .nav-container .tab-nav li :hover {
-  border-bottom: solid 2px whitesmoke;
-}
-
 .nav-container .tab-nav a {
   text-decoration: none;
   color: inherit;
   font-size: 1.125em;
   font-weight: 400;
+  border-bottom: solid 2px rgba(255, 255, 255, 0);
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+
+.nav-container .tab-nav a:focus, .nav-container .tab-nav a:hover {
+  border-bottom: solid 2px white;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
 }
 
 .nav-container .tab-nav .active {
-  border-bottom: solid 2px whitesmoke;
+  border-bottom: solid 2px white;
 }
 
 .project-card {
