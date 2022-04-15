@@ -1,0 +1,41 @@
+// Colors
+$clr-primary: #082032;
+$clr-secondary: #FF4C29;
+$clr-accent-1: #334756;
+$clr-accent-2: #2C394B;
+
+body {
+
+      main {
+            align-items: center;
+            justify-content: center;
+
+            >* {
+                  padding: 1rem;
+            }
+
+            h1 {
+                  margin-bottom: 0;
+            }
+
+            h2 {
+                  font-weight: 500;
+            }
+
+            button {
+                  border-radius: 5px;
+                  outline: none;
+                  color: inherit;
+                  padding: 0.4rem;
+                  cursor: pointer;
+                  transition: all 150ms ease-in-out;
+                  border: solid 1px whitesmoke;
+                  background-color: rgba(51, 51, 51, 0.7);
+
+                  &:hover {
+                        background-color: $clr-secondary;
+                        transition: all 200ms ease-in-out;
+                  }
+            }
+      }
+}

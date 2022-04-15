@@ -14,6 +14,7 @@
             crossorigin="anonymous" referrerpolicy="no-referrer" />
       <link rel="stylesheet" href="../main.css">
       <link rel="stylesheet" href="../styles/simple-counter.css">
+      <script src="../js/simple-counter.js" defer></script>
 </head>
 <body>
       <header class="nav-container">
@@ -31,5 +32,14 @@
                   </ul>
             </div>
       </header>
+      <main class="flex-column">
+            <h1 class="fs-700 letter-spacing-2 uppercase">Simple Counter</h1>
+            <h2 id="counter-output" class="fs-800">0</h2>
+            <div class="button-container flex-row">
+                  <button id="decrementCounter">Decrement</button>
+                  <button id="resetCounter">Reset</button>
+                  <button id="incrementCounter">Increment</button>
+            </div>
+      </main>
 </body>
 </html>
