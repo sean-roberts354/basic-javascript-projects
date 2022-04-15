@@ -37,6 +37,9 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   padding-inline: 2rem;
+  background-color: #082032;
+  font-family: "Montserrat", sans-serif;
+  color: whitesmoke;
 }
 
 /* // Remove default font-weights (Commented out for now because I actually like the default weights and don't want to keep re-adding them.
