@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Color Flipper</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="../main.css">
+      <link rel="stylesheet" href="../styles/color-flipper.css">
+      <script src="../js/util.js" defer></script>
+</head>
+<body class="bg-primary ff-sans-normal text-white">
+      <header class="nav-container">
+            <div id="primary-nav" class="primary-nav">
+                  <ul>
+                        <li><a href="../index.html">About</a></li>
+                        <li><a class="active" href="">Javascript Projects</a></li>
+                  </ul>
+            </div>
+            <div class="tab-nav">
+                  <ul>
+                        <li><a href="view-all.html">View All</a></li>
+                        <li><a href="#main-content" class="active">Color Flipper</a></li>
+                  </ul>
+            </div>
+      </header>
+      <main id="main-content" class="container flex-column">
+            <div class="main-title">
+                  <h1 class="fs-700 uppercase letter-spacing-2">Color Flipper</h1>
+                  <div class="instructions">
+                        <p class="fs-400" style="font-weight: 300">Press the button to change the colors on the page</p>
+                  </div>
+            </div>
+            <div class="color-values-output">
+                  <p class="fs-500">Top Nav Color: <span id="primary-nav-color-output">#FF4C29</span></p>
+                  <p class="fs-500">Tab Nav Color: <span id="tab-nav-color-output">#334756</span></p>
+                  <p class="fs-500">Background Color: <span id="background-color-output">#082032</span></p>
+            </div>
+            <button id="btn-change-colors">Click Here!</button>
+      </main>
+</body>
+</html>

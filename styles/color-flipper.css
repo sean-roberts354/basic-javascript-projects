@@ -1,0 +1,41 @@
+main {
+  height: 60vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+main > * {
+  border: solid 1px whitesmoke;
+  background-color: rgba(51, 51, 51, 0.7);
+  padding: 1rem;
+}
+
+main .main-title {
+  border-radius: 1rem;
+}
+
+main .color-values-output {
+  border-radius: 1rem;
+}
+
+main #btn-change-colors {
+  border-radius: 5px;
+  outline: none;
+  color: inherit;
+  padding: 0.4rem;
+  cursor: pointer;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+main #btn-change-colors:hover {
+  background-color: #FF4C29;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+/*# sourceMappingURL=color-flipper.css.map */
