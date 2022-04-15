@@ -1,42 +1,45 @@
-
 // Colors
 $clr-primary: #082032;
 $clr-secondary: #FF4C29;
 $clr-accent-1: #334756;
 $clr-accent-2: #2C394B;
 
+body {
 
-main {
-      height: 60vh;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
+      background-color: $clr-primary;
 
-      > * {
-            border: solid 1px whitesmoke;
-            background-color: rgba(51, 51, 51, 0.7);
-            padding: 1rem;
-      }
+      main {
+            height: 60vh;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
 
-      .main-title {            
-            border-radius: 1rem;
-      }
+            >* {
+                  border: solid 1px whitesmoke;
+                  background-color: rgba(51, 51, 51, 0.7);
+                  padding: 1rem;
+            }
 
-      .color-values-output {            
-            border-radius: 1rem;
-      }
+            .main-title {
+                  border-radius: 1rem;
+            }
 
-      #btn-change-colors {
-            border-radius: 5px;
-            outline: none;
-            color: inherit;
-            padding: 0.4rem;
-            cursor: pointer;
-            transition: all 150ms ease-in-out;
+            .color-values-output {
+                  border-radius: 1rem;
+            }
 
-            &:hover {
-                  background-color: $clr-secondary;
-                  transition: all 200ms ease-in-out;
+            #btn-change-colors {
+                  border-radius: 5px;
+                  outline: none;
+                  color: inherit;
+                  padding: 0.4rem;
+                  cursor: pointer;
+                  transition: all 150ms ease-in-out;
+
+                  &:hover {
+                        background-color: $clr-secondary;
+                        transition: all 200ms ease-in-out;
+                  }
             }
       }
 }
