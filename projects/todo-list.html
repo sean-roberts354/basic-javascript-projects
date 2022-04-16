@@ -4,7 +4,7 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Color Flipper</title>
+      <title>To-Do List</title>
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -12,12 +12,11 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
             integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <link rel="stylesheet" href="../main.css">
-      <link rel="stylesheet" href="../styles/color-flipper.css">
-      <script src="../js/util.js" defer></script>
-      <script src="../js/color-flipper.js" defer></script>
+      <link href="../main.css" rel="stylesheet">
+      <link rel="stylesheet" href="../styles/todo-list.css">
+      <script src="../js/todo-list.js" defer></script>
 </head>
-<body id="body" class="ff-sans-normal text-white">
+<body>
       <header class="nav-container">
             <div id="primary-nav" class="primary-nav">
                   <ul>
@@ -25,29 +24,15 @@
                         <li><a class="active" href="">Javascript Projects</a></li>
                   </ul>
             </div>
-            <div id="tab-nav" class="tab-nav">
+            <div class="tab-nav">
                   <ul>
                         <li><a href="view-all.html">View All</a></li>
-                        <li><a href="#main-content" class="active">Color Flipper</a></li>
+                        <li><a href="color-flipper.html">Color Flipper</a></li>
                         <li><a href="simple-counter.html">Simple Counter</a></li>
                         <li><a href="quote-machine.html">Quote Machine</a></li>
-                        <li><a href="todo-list.html">To-Do List</a></li>
+                        <li><a href="todo-list.html" class="active">To-Do List</a></li>
                   </ul>
             </div>
       </header>
-      <main id="main-content" class="container flex-column">
-            <div class="main-title">
-                  <h1 class="fs-700 uppercase letter-spacing-2">Color Flipper</h1>
-                  <div class="instructions">
-                        <p class="fs-400" style="font-weight: 300">Press the button to change the colors on the page</p>
-                  </div>
-            </div>
-            <div class="color-values-output">
-                  <p class="fs-500">Top Nav Color: <span id="primary-nav-color-output">rgb(255, 76, 41)</span></p>
-                  <p class="fs-500">Tab Nav Color: <span id="tab-nav-color-output">rgb(51, 71, 86)</span></p>
-                  <p class="fs-500">Background Color: <span id="background-color-output">rgb(8, 32, 50)</span></p>
-            </div>
-            <button id="btn-change-colors">Click Here!</button>
-      </main>
 </body>
 </html>
