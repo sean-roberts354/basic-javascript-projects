@@ -1,1 +1,35 @@
-/* No CSS *//*# sourceMappingURL=quote-machine.css.map */
+main .app {
+  height: 60vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 2rem;
+  border: solid 3px whitesmoke;
+  border-radius: 3px;
+}
+
+main .app > * {
+  padding: 2rem;
+}
+
+main .app .button-container button {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+
+main .app .button-container button:hover i {
+  color: #FF4C29;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+
+main .app .button-container button i {
+  font-size: 2rem;
+  color: whitesmoke;
+}
+/*# sourceMappingURL=quote-machine.css.map */

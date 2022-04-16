@@ -3,3 +3,44 @@ $clr-primary: #082032;
 $clr-secondary: #FF4C29;
 $clr-accent-1: #334756;
 $clr-accent-2: #2C394B;
+
+main {
+
+
+      .app {
+            height: 60vh;
+            align-items: center;
+            justify-content: space-around;
+            gap: 2rem;
+            border: solid 3px whitesmoke;
+            border-radius: 3px;
+
+            >* {
+                  padding: 2rem;
+            }
+
+            .button-container {
+
+                  button {
+                        border: none;
+                        background-color: inherit;
+                        cursor: pointer;
+                        transition: all 100ms ease-in-out;
+
+                        &:hover {
+                              i {
+                                    color: $clr-secondary;
+                                    transition: all 100ms ease-in-out;
+                              }
+                        }
+
+                        i {
+                              font-size: 2rem;
+                              color: whitesmoke;
+                        }
+                  }
+            }
+      }
+
+
+}
