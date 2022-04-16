@@ -1,0 +1,92 @@
+.app {
+  background-color: #334756;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.app form button {
+  cursor: pointer;
+  background-color: inherit;
+  border: solid 1px whitesmoke;
+  border-radius: 3px;
+  color: whitesmoke;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+
+.app form button:hover {
+  background-color: #FF4C29;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.app .unfinished-tasks-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.app .unfinished-tasks-list .unfinished-tasks-item {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.app .unfinished-tasks-list .unfinished-tasks-item .task-controls {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app .unfinished-tasks-list .unfinished-tasks-item .task-controls button {
+  cursor: pointer;
+  background-color: inherit;
+  border: none;
+  aspect-ratio: 1;
+}
+
+.app .unfinished-tasks-list .unfinished-tasks-item .task-controls button i {
+  color: whitesmoke;
+  font-size: 1rem;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+
+.app .unfinished-tasks-list .unfinished-tasks-item .task-controls button:hover i.fa-check {
+  color: green;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+.app .unfinished-tasks-list .unfinished-tasks-item .task-controls button:hover i.fa-xmark {
+  color: red;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+.app .finished-tasks-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.app .finished-tasks-list .finished-tasks-item {
+  text-decoration: line-through;
+  color: rgba(245, 245, 245, 0.8);
+}
+/*# sourceMappingURL=todo-list.css.map */

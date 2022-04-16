@@ -1,0 +1,77 @@
+// Colors
+$clr-primary: #082032;
+$clr-secondary: #FF4C29;
+$clr-accent-1: #334756;
+$clr-accent-2: #2C394B;
+
+.app {
+      background-color: $clr-accent-1;
+      width: fit-content;
+      height: fit-content;
+
+      form {
+            button {
+                  cursor: pointer;
+                  background-color: inherit;
+                  border: solid 1px whitesmoke; 
+                  border-radius: 3px;
+                  color: whitesmoke;
+                  transition: all 100ms ease-in-out;
+
+                  &:hover {
+                        background-color: $clr-secondary;
+                        transition: all 200ms ease-in-out;
+                  }
+            }
+      }
+
+      .unfinished-tasks-list {
+            display: flex;
+            flex-direction: column;
+            
+            .unfinished-tasks-item {
+                  justify-content: space-between;
+
+                  .task-controls {
+                        justify-content: center;
+                        align-items: center;
+
+                        button {
+                              cursor: pointer;
+                              background-color: inherit;
+                              border: none;
+                              aspect-ratio: 1;
+
+                              i {
+                                    color: whitesmoke;
+                                    font-size: 1rem;
+                                    transition: all 100ms ease-in-out;
+
+                              }
+
+                              &:hover {
+                                    i.fa-check {
+                                          color: green;
+                                          transition: all 150ms ease-in-out;
+                                    }
+
+                                    i.fa-xmark {
+                                          color: red;
+                                          transition: all 150ms ease-in-out;
+                                    }
+                              }
+                        }
+                  }
+            }
+      }
+
+      .finished-tasks-list {
+            display: flex;
+            flex-direction: column;
+
+            .finished-tasks-item {
+                  text-decoration: line-through;
+                  color: rgba(245, 245, 245, 0.8); 
+            }
+      }
+}

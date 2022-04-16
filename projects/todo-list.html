@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,6 +17,7 @@
       <link rel="stylesheet" href="../styles/todo-list.css">
       <script src="../js/todo-list.js" defer></script>
 </head>
+
 <body>
       <header class="nav-container">
             <div id="primary-nav" class="primary-nav">
@@ -34,5 +36,39 @@
                   </ul>
             </div>
       </header>
+      <main class="app container flex-column">
+            <h1 class="fs-600 uppercase letter-spacing-2">To-Do List</h1>
+            <form id="input-controls" class="flex-row">
+                  <input type="text" id="new-task-input">
+                  <button id="btn-add-new-task">Add task</button>
+            </form>
+            <section class="unfinished-tasks-conatiner">
+                  <h2 class="fs-400">Unfinished Tasks:</h2>
+                  <div class="unfinished-tasks-list">
+                        <div class="unfinished-tasks-item flex-row">
+                              <p>Test</p>
+                              <div class="task-controls flex-row">
+                                    <button id="mark-task-finished"><i class="fa-solid fa-check"><span class="sr-only">Mark task finished</span></i></button>
+                                    <button id="mark-task-finished"><i class="fa-solid fa-xmark"><span class="sr-only">Delete task</span></i></button>
+                              </div>
+                        </div>
+                        <div class="unfinished-tasks-item flex-row">
+                              <p>Please Ignore</p>
+                              <div class="task-controls flex-row">
+                                    <button id="mark-task-finished"><i class="fa-solid fa-check"><span class="sr-only">Mark task finished</span></i></button>
+                                    <button id="mark-task-finished"><i class="fa-solid fa-xmark"><span class="sr-only">Delete task</span></i></button>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+            <section class="finished-tasks-container">
+                  <h2 class="fs-400">Finished Tasks:</h2>
+                  <div class="finished-tasks-list">
+                        <p class="finished-tasks-item">Test</p>
+                        <p class="finished-tasks-item">Please Ignore</p>
+                  </div>
+            </section>
+      </main>
 </body>
+
 </html>
