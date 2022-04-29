@@ -15,7 +15,7 @@ function createButtonContainer() {
       buttonFinished.innerHTML = 
             "<i class='fa-solid fa-check'><span class='sr-only'>Mark task finished</span></i>";
       buttonFinished.addEventListener('click', (e) => {
-            return e.target.id;
+            markTaskFinished(e.target.id);
       })
 
       let buttonDelete = document.createElement('button');
@@ -58,6 +58,15 @@ function createNewTask(input) {
 
       return newTask;
 }
+// <p class="finished-tasks-item">Test</p>
+
+function createFinishedTask(input) {
+      let finishedTask = document.createElement('p');
+      finishedTask.classList.add('finished-tasks-item')
+      finishedTask.innerText = input;
+
+      return finishedTask;
+}
 
 function addNewTask() {
       let unfinishedTasksList = document.querySelector(".unfinished-tasks-list");
@@ -75,6 +84,18 @@ function deleteTask(taskID) {
       let unfinishedTasksList = document.querySelector(".unfinished-tasks-list");
 
       unfinishedTasksList.removeChild(taskToBeDeleted);
+}
+
+function markTaskFinished(taskID) {
+      let taskToBeFinished = document.querySelector(`#${CSS.escape(taskID)}`);
+      let unfinishedTasksList = document.querySelector(".unfinished-tasks-list");
+      let finishedTasksList = document.querySelector(".finished-tasks-list")
+
+      let finishedTaskText = taskToBeFinished.firstChild;
+      finishedTaskText = finishedTaskText.textContent;
+
+      unfinishedTasksList.removeChild(taskToBeFinished);
+      finishedTasksList.appendChild(createFinishedTask(finishedTaskText));
 }
 
 
