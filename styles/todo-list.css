@@ -8,7 +8,7 @@
   height: fit-content;
 }
 
-.app form button {
+.app .input-controls button {
   cursor: pointer;
   background-color: inherit;
   border: solid 1px whitesmoke;
@@ -18,7 +18,7 @@
   transition: all 100ms ease-in-out;
 }
 
-.app form button:hover {
+.app .input-controls button:hover {
   background-color: #FF4C29;
   -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
