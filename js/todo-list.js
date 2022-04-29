@@ -41,15 +41,6 @@ function createNewTask(input) {
       newTask.classList.add("unfinished-tasks-item", "flex-row");
       newTask.setAttribute('id', buttonContainer.buttonID);
 
-
-      /* ADDED TO MAKE TESTING EASIER REMOVE WHEN DONE */
-      if (input == "") {
-            input = "Test"
-      }
-      /* ADDED TO MAKE TESTING EASIER REMOVE WHEN DONE */
-
-
-      // Need to implement a way to cancel process if there's no input
       let newTaskText = document.createElement('p');
       newTaskText.innerText = input;
 
@@ -58,7 +49,7 @@ function createNewTask(input) {
 
       return newTask;
 }
-// <p class="finished-tasks-item">Test</p>
+
 
 function createFinishedTask(input) {
       let finishedTask = document.createElement('p');
@@ -72,7 +63,12 @@ function addNewTask() {
       let unfinishedTasksList = document.querySelector(".unfinished-tasks-list");
       input = document.querySelector("#new-task-input");
 
-      let newTask = createNewTask(input.value);
+      if (input.value == "") {
+            alert("Enter a task into the textbox first");
+            return;
+      } 
+
+let newTask = createNewTask(input.value);
 
       unfinishedTasksList.appendChild(newTask);
       input.value = "";
@@ -101,10 +97,3 @@ function markTaskFinished(taskID) {
 
 
 document.querySelector("#btn-add-new-task").addEventListener('click', addNewTask);
-
-
-
-// Add's task on page load so I don't have to when I want to test something
-window.onload = function() {
-      addNewTask();
-}
