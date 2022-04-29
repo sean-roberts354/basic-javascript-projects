@@ -61,6 +61,7 @@
   font-size: 1rem;
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
+  pointer-events: none;
 }
 
 .app .unfinished-tasks-list .unfinished-tasks-item .task-controls button:hover i.fa-check {
